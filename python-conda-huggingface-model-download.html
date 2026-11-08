@@ -233,7 +233,7 @@ a:hover { color: var(--mint); }
 <h2>3. 开启hf_transfer与多线程分片并发加速</h2>
 <p>为了突破单条TCP连接在跨国高延迟链路上的吞吐上限，建议开发者在Python环境中安装并启用基于Rust编写的官方高速下载插件hf_transfer（设置环境变量HF_HUB_ENABLE_HF_TRANSFER=1）。该工具会将数GB的Safetensors权重文件切分为多个并行块，通过多线程并发流同时拉取，配合高带宽专线可轻松将千兆光纤跑至满负荷状态。</p>
 <h2>4. TUN透明网关模式接管终端与Docker容器</h2>
-<p>在Linux与macOS研发环境中，很多底层编译脚本、pip子进程或Docker build构建阶段并不会严格遵守HTTP_PROXY环境变量。根据<a href="https://tizilab.net/" target="_blank">AI算法工程师海外资源提速指南</a>总结的最佳实践，在开发机或实验室网关层启用基于TUN虚拟网卡的透明分流模式，配合大吞吐IEPL专线节点，能够无差别接管所有CLI命令行工具、Git LFS以及容器内网络请求。</p>
+<p>在Linux与macOS研发环境中，很多底层编译脚本、pip子进程或Docker build构建阶段并不会严格遵守HTTP_PROXY环境变量。根据AI算法工程师海外资源提速指南总结的最佳实践，在开发机或实验室网关层启用基于TUN虚拟网卡的透明分流模式，配合大吞吐IEPL专线节点，能够无差别接管所有CLI命令行工具、Git LFS以及容器内网络请求。</p>
 <h3>客户端分流策略与自动化运维建议</h3>
 <p>建议用户在导入订阅配置后启用内置的智能健康检查策略组，让系统自动根据实时往返延迟将关键业务锁定在最优的磁浮BGP专线通道上。</p>
 <h2>5. Conda与PyPI依赖求解阶段的低延迟优化</h2>
@@ -250,7 +250,7 @@ a:hover { color: var(--mint); }
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap;">
           <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow" target="_blank" class="btn-primary">立即免费试用 <svg class="ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></a>
-          <a href="https://tizilab.net/paihang/" target="_blank" class="btn-secondary">2026最新梯子推荐</a>
+          
         </div>
       </div>
     </div>

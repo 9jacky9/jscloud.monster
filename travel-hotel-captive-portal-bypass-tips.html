@@ -233,7 +233,7 @@ a:hover { color: var(--mint); }
 <h2>3. 为什么开启TUN虚拟网卡或加密DoH会拦截弹窗</h2>
 <p>问题恰恰出在“劫持”二字上。现代网络加速客户端为了保护用户免受中间人攻击与DNS污染，默认会将系统所有流量（包括上述强制门户探测请求）封装进加密隧道，或者强制使用加密的DoH/DoT服务器解析域名。由于酒店局域网网关在未完成认证前根本不允许连接外部代理服务器或加密DNS，系统的探测请求直接超时失败，既无法收到局域网网关的重定向报文，也无法得知本地网关的真实内网地址。</p>
 <h2>4. 配置Captive Portal探测域名直连白名单</h2>
-<p>要想在不关闭加速软件的前提下完美兼容全球酒店与机场Wi-Fi，最优雅的解决方案是在分流规则的最顶层加入强制门户探测白名单。参考<a href="https://tizilab.net/" target="_blank">全球差旅网络连通与安全手册</a>整理的跨平台规则规范，只需将captive.apple.com、msftconnecttest.com、connectivitycheck.gstatic.com等探测域名强制设为DIRECT直连，并允许系统在门户探测阶段回退使用DHCP下发的本地网关DNS，认证页面便能瞬间丝滑弹出。</p>
+<p>要想在不关闭加速软件的前提下完美兼容全球酒店与机场Wi-Fi，最优雅的解决方案是在分流规则的最顶层加入强制门户探测白名单。参考全球差旅网络连通与安全手册整理的跨平台规则规范，只需将captive.apple.com、msftconnecttest.com、connectivitycheck.gstatic.com等探测域名强制设为DIRECT直连，并允许系统在门户探测阶段回退使用DHCP下发的本地网关DNS，认证页面便能瞬间丝滑弹出。</p>
 <h3>客户端分流策略与自动化运维建议</h3>
 <p>建议用户在导入订阅配置后启用内置的智能健康检查策略组，让系统自动根据实时往返延迟将关键业务锁定在最优的磁浮BGP专线通道上。</p>
 <h2>5. 一秒唤起登录页的万能明文网址小窍门</h2>
@@ -250,7 +250,7 @@ a:hover { color: var(--mint); }
         </div>
         <div style="display:flex;gap:12px;flex-wrap:wrap;">
           <a href="https://ww012.twilightaff.com/#/?code=A56DH1Af" rel="nofollow" target="_blank" class="btn-primary">立即免费试用 <svg class="ico" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></a>
-          <a href="https://tizilab.net/paihang/" target="_blank" class="btn-secondary">2026最新梯子推荐</a>
+          
         </div>
       </div>
     </div>
